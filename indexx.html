@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Car and Content</title>
+<style>
+body {
+  background: linear-gradient(to bottom, #ADD8E6, #FFFFE0);
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Main axis is vertical */
+  min-height: 100vh;
+}
+
+.container {
+  display: flex; /* Enables flexbox for horizontal layout */
+  flex-grow: 1;  /* Allows container to take up available space */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  padding: 20px; /* Add some padding around the content */
+}
+
+.car-container {
+  width: 45%; /* Adjust as needed */
+  margin-right: 20px; /* Space between car and content */
+}
+
+.car {
+  width: 100%;
+  height: 0;
+  padding-top: 45%; /* Adjust aspect ratio as needed */
+  position: relative;
+  background-image: url("car_image.png"); /* Replace with your image path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content {
+  width: 45%; /* Adjust as needed */
+}
+
+.content p {
+  margin-bottom: 20px; /* Space between paragraph and button */
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="car-container">
+    <div class="car"></div>
+  </div>
+  <div class="content">
+    <p>Your paragraph text goes here.  You can write as much as you want, and it will wrap within the container.</p>
+    <button class="button">Commencez</button>
+  </div>
+</div>
+
+</body>
+</html>

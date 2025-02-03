@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Colors */
+    --orange-color: #FFB860;
+    --blue-color: #2858D3;
+    --background-color: #FFF8F3;
+    --grey:#555;
+    --white: #ffffff;
+    --black:#000000;
+    
+    
+    --font-primary: 'Poppins', sans-serif;
+    --font-size-logo: 1.5rem;
+    --font-size-nav: 1rem;
+    --font-size-h1: 2.5rem;
+    --font-size-p: 1.1rem;
+}
+
+.hero{
+    background-image: linear-gradient(to bottom, #7972e7, #e3aa81);
+    padding: 100px;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 0;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-text{
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-nav);
+    transition: color 0.3s ease;
+}
+
+.car {
+    width: 200px;
+    height: 100px;
+    position: relative;
+}
+  
+.body {
+    width: 100%;
+    height: 60%;
+    background-color: teal;
+    position: absolute;
+    top: 0;
+    border-radius: 20px 20px 0 0;
+  }
+  
+.window {
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    border-radius: 10px;
+  }
+  
+.wheel {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+  }
+  
+.wheel.left {
+    left: 20px;
+  }
+  
+.wheel.right {
+    right: 20px;
+  }
+
+
+/*BUS
+width: 220px;
+  height: 300px;
+  border: 1px solid black; 
+  display: flex;
+  align-items: center;
+*/
+.hero-content {
+    display: flex;
+    
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.bus-container {
+    width: 300px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden; /* Hide overflowing parts of the wheels */
+   
+}
+
+.bus-body {
+    width: 100%;
+    height: 70%; /* Adjust for body height */
+    background-color: #0078D7; /* Blue */
+    position: absolute;
+    top: 15%; /* Adjust for positioning */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.window {
+    width: 40px; /* Adjust window width */
+    height: 50px; /* Adjust window height */
+    background-color: white;
+    position: absolute;
+    top: 25%; /* Adjust vertical position */
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Add a border to the windows */
+}
+
+.window:nth-child(1) {
+    left: 20px; /* Adjust horizontal position */
+}
+
+.window:nth-child(2) {
+    left: 80px; /* Adjust horizontal position */
+}
+
+.window:nth-child(3) {
+    left: 140px; /* Adjust horizontal position */
+}
+
+.window:nth-child(4) {
+    left: 200px; /* Adjust horizontal position */
+}
+
+.wheel-bus {
+    width: 50px; /* Adjust wheel width */
+    height: 50px; /* Adjust wheel height */
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px; /* Adjust vertical position */
+}
+
+.wheel-bus::before {
+    content: "";
+    display: block;
+    width: 20px; /* Adjust inner circle size */
+    height: 20px; /* Adjust inner circle size */
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wheel-bus:nth-child(1) {
+    left: 40px; /* Adjust horizontal position */
+}
+
+.wheel-bus:nth-child(2) {
+    left: 180px; /* Adjust horizontal position */
+}
+
+.lights {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15px;
+}
+
+.lights.front {
+    background-color: yellow;
+    right: 10px;
+}
+
+.lights.back {
+    background-color: red;
+    left: 10px;
+}
+.bus-text {
+    width: 45%; /* Adjust as needed */
+    
+}
+
+.bus-text p {
+    margin-bottom: 20px; /* Space between paragraph and button */
+}
+
+.bus-button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
