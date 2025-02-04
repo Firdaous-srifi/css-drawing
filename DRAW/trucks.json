@@ -1,0 +1,11 @@
+{
+    "models": [
+      { "name": "Tesla Semi", "price": 1500000, "cost_per_km": 5  },
+      { "name": "Volvo VNR Electric", "price": 1200000, "cost_per_km": 4.5 },
+      { "name": "Freightliner eCascadia", "price": 1300000, "cost_per_km": 4.8 },
+      { "name": "Mercedes eActros", "price": 1400000, "cost_per_km": 5.2  },
+      { "name": "Scania Electric Truck", "price": 1250000, "cost_per_km": 4.6},
+      { "name": "DAF CF Electric", "price": 1100000, "cost_per_km": 4.2 }
+      
+    ]
+  }

@@ -1,0 +1,25 @@
+{
+    "bus_models": [
+        {
+            "name": "Urbain Compact",
+            "base_price": 250000,
+            "cost_per_km_autonomy": 50
+        },
+        {
+            "name": "Interurbain Standard",
+            "base_price": 350000, 
+            "cost_per_km_autonomy": 75
+        },
+        {
+            "name": "Grand Tourisme",
+            "base_price": 450000,
+            "cost_per_km_autonomy": 100
+        }
+    ],
+    "state_subsidies": [
+        {
+            "type": "Électrique",
+            "reduction_percentage": 0.15
+        }
+    ]
+}

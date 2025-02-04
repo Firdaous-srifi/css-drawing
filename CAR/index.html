@@ -1,27 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car</title>
-    <link rel="stylesheet" href="/CAR/styles.css">
+  <title>Electric Bus Cost Simulator</title>
+  <link rel="stylesheet" href="/CAR/styles.css">
 </head>
 <body>
-    <div class="car-container">
-        <div class="front-face">
-            <h2 class="font-style">Headline</h2>
-            <p class="font-italic">This is the car's front face.</p>
-        </div>
-        <div class="body">
-            <!-- Body of the car -->
-            <img src="car-body.jpg" class="image-face" alt="Car body">
-        </div>
-        <div class="rear-face">
-            <h2 class="font-style">Headline</h2>
-            <p class="font-italic">This is the car's rear face.</p>
+    <div class="container">
+        <h1>Simulateur de Coût de Bus Électrique</h1>
+        <form id="bus-form">
+            <label for="bus-model">Modèle de bus :</label>
+            <select id="bus-model" required>
+                <option value="">Sélectionnez un modèle</option>
+            </select>
+
+            <label for="battery-autonomy">Autonomie supplémentaire (km) :</label>
+            <input type="number" id="battery-autonomy" min="0" required>
+
+            <label for="options-cost">Coût des options :</label>
+            <input type="number" id="options-cost" min="0" required>
+
+            <button type="submit" id="calculate-btn">Calculer</button>
+        </form>
+
+        <div id="result-section" class="hidden">
+            <h2>Résultats de la simulation</h2>
+            <p>Coût total : <span id="total-cost"></span> €</p>
         </div>
     </div>
 
-    <script src="script.js"></script>
+  <script src="/CAR/js.js"></script>
 </body>
 </html>

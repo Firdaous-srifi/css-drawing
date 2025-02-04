@@ -19,56 +19,164 @@ body {
   padding: 20px; /* Add some padding around the content */
 }
 
-.car-container {
-  width: 45%; /* Adjust as needed */
-  margin-right: 20px; /* Space between car and content */
-}
+.logos{
+  display: flex;
+  align-items: center;
 
-.car {
-  width: 100%;
-  height: 0;
-  padding-top: 45%; /* Adjust aspect ratio as needed */
-  position: relative;
-  background-image: url("car_image.png"); /* Replace with your image path */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.content {
-  width: 45%; /* Adjust as needed */
-}
-
-.content p {
-  margin-bottom: 20px; /* Space between paragraph and button */
-}
-
-.button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
   cursor: pointer;
+  padding: 20px;
 }
 
-.button:hover {
-  background-color: #0056b3;
+.bus-logo {
+  position: relative;
+  width: 510px;
+  height: 200px;
 }
+
+.bus-body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  bottom: 3px;
+  background: #0099ff;
+  border-radius: 16px;
+}
+.bus-body::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(245, 11, 11);
+    box-shadow: 3px 3px 8px rgba(217, 7, 7, 0.826);
+   bottom: 3px;
+   left: 5px;
+}
+.bus-body::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(208, 208, 115);
+    box-shadow: 3px 3px 8px rgba(250, 242, 9, 0.923);
+   bottom: 3px;
+   right: 5px;
+}
+
+
+
+.windows {
+  position: absolute;
+  width: 25%;
+  height: 40%;
+  background: #ccebff;
+  top: 0px;
+  border: 1px solid black;
+}
+
+.left-windows { left: 15%; }
+.right-windows { right: 15%; }
+
+.wheels {
+  position: absolute;
+  width: 22%;
+  height: 45%;
+  background: #333;
+  border-radius: 50%;
+  bottom: -10%;
+}
+
+.front-wheels { left: 21%; }
+.rear-wheels { right: 21%; }
+
+.main-wheels{
+    position: absolute;
+    width: 11%;
+    height: 23%;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    bottom: 1px;
+    box-shadow: inset 2px 2px 8px rgb(134 134 134 / 92%);
+}
+.lefts{
+    left: 133px;
+}
+.rights{
+    right: 136px;
+}
+footer {
+text-align: center;}
+
+.footer-container {
+background-color: #95AAB6;
+display: flex;}
+
+.footer-container a {
+color: #F5F6F7;
+padding: 42px 16px;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-size: medium;}
+
+.footer-left {
+margin-right: auto}
+
+.fa:hover {
+color: #45405F;}
+
+.footer-icons {
+justify-content: space-between;
+padding: 16px 64px 0px 0px}
+
+.footer-icons ul {
+list-style-type: none;}
+
+.footer-icons li {
+display: inline-block;}
+
+.footer-right {
+margin-left: auto}
+
+.copyright 
+{background-color: #F5F6F7;
+overflow: hidden;}
 </style>
 </head>
 <body>
 
 <div class="container">
-  <div class="car-container">
-    <div class="car"></div>
-  </div>
-  <div class="content">
-    <p>Your paragraph text goes here.  You can write as much as you want, and it will wrap within the container.</p>
-    <button class="button">Commencez</button>
-  </div>
+    <div class="bus-logo">
+        <div class="bus-body"></div>
+        <div class="bus-roof"></div>
+        <div class="windows left-windows"></div>
+        <div class="windows right-windows"></div>
+        <div class="wheels front-wheels"></div>
+        <div class="wheels rear-wheels"></div>
+        <div class="main-wheels lefts"></div>
+        <div class="main-wheels rights"></div>
+      </div>
 </div>
+<footer>
+    <div class="footer-container">
+      <a class="link footer-left" href="index.html">n.l.tkaczyk</a>
+      <div class="footer-icons">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/nltkaczyk/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
+          <li><a href="https://www.instagram.com/n.l.tkaczyk/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+          <li><a href="https://www.youtube.com/@n.l.tkaczyk/" target="_blank"><i class="fa fa-youtube fa-2x"></i></a></li>
+      </ul>
+      </div>
+      <a class="link footer-right" href="contact.html">contact</a>
+    </div>
+
+  <div class="copyright">
+    <p style="color: #95AAB6;">
+      2023 &copy by Natalia Lidia Tkaczyk
+    </p>
+  </div>
+</footer>
 
 </body>
 </html>
