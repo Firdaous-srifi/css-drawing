@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectriCar</title>
+    <!--link to css-->
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!--
+    SECTION 1 - HEADER
+    -->
+    <section class="header">
+        <div class="container">
+            <div class="nav-bar">
+                <!--logo-->
+                <div class="logo">
+                    <div class="car-logo">
+                        
+                        <div class="car-body1"></div>
+                        <div class="point">
+                            <div class="point2"></div>
+                        </div>
+                        <div class="car-roof"></div>
+                        <div class="wheel front-wheel"></div>
+                        <div class="wheel rear-wheel"></div>
+                    </div>
+                    <span class="logo-text">ElectriCar</span>
+                </div>
+                <div class="menu-bar">
+                    <span class="icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">A propos</a></li>
+                        <li><a href="#">Contactez-Nous</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="hero-car">
+                    <div class="car-content">
+                        <div class="car-body2"></div>
+                        <div class="car-roof2"></div>
+                        <div class="both-windows"></div>
+                        <div class="windows left-windows"></div>
+                        <div class="windows right-windows"></div>
+                        
+                        <div class="wheels front-wheels"></div>
+                        <div class="wheels rear-wheels"></div>
+                        <div class="main-wheels lefts"></div>
+                        <div class="main-wheels rights"></div>
+                    </div>
+                </div>
+                <div class="description">
+                    <p>Faites une simulation
+                        <br> de prix maintenant !</p>
+                    <br>    
+                    <a href="#">Commencez</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+    SECTION 2
+    -->
+    <section class="simulator">
+        <h1>Simulateur d'Estimation des Coûts des Voitures Électriques</h1>
+        <p>
+            Le simulateur d'estimation des couts des voitures electriques aide les utilisateurs a calculer le cout total d'acquisition d'une voiture electrique. Il prend en compte des facteurs tels que le prix de base, l'autonomie supplementaires, et les subventions gouvernementales disponibles. Ce outil permet aux utilisateurs de prendre des decisions eclairees pour l'achat de leur prochain vehicule electrique.
+        </p>
+        <div class="lists">
+            <p>Prix de base pour differents modeles</p>
+            <p>Coût de l'autonomie supplementaire</p>
+            <p>Options premium disponibles</p>
+            <p>Subventions et reductions applicables</p>
+        </div>
+    </section>
+
+    <!--
+    SECTION 3
+    -->
+    <h2>Simulateur Coût d'Acquisition de Voiture Électrique</h2>
+    <section class="s3">
+        <div class="forum">
+        <br><br>
+        <form id="simulationForm">
+            <label for="carModel">Modèle de voiture :</label>
+            <select id="carModel" required></select>
+            
+            <label for="extraRange">Autonomie supplémentaire (km) :</label>
+            <input type="number" id="extraRange" min="0" required>
+            
+            <label for="extraOptions">Coût des options supplémentaires (MAD) :</label>
+            <input type="number" id="extraOptions" min="0" required>
+            
+            <label for="subvention">Réduction ou subvention (MAD) :</label>
+            <input type="number" id="subvention" min="0" required>
+            
+            <button class="calcul-button" type="submit" id="calculateBtn">Calculer</button>
+        </form>
+        </div>
+        <br>
+    <!--
+    SECTION 4
+    -->
+        <section class="s4">
+                
+            
+            <div id="resultSection">
+                <h3 id="totalCost"></h3>
+            </div>
+
+        </section>
+    </section>
+
+    <!--
+    FOOTER
+    -->
+    <footer>
+        
+            <div class="column">
+                <h3>À propos de DroneSnap</h3>
+                <p>Ce simulateur aide les utilisateurs a estimer le cout total d'acquisition d'une voiture electrique en fonction de leurs bosoins.</p>
+            </div>
+            <div class="column">
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li><a href="#">Politiques de confidentialite</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Contactez-nous</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="/icons/facebook.png" ></a>
+                    <a href="#"><img src="/icons/instagram.png" ></a>
+                </div>
+            </div>
+            <div class="line"></div>
+        
+        <p class="copyright">@2025 Simulateur Voiture Electrique. Tous droits reserves.</p>
+    </footer>
+
+    <!--link to javascript-->
+    <script src="/script.js"></script>
+</body>
+</html>
