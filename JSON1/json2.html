@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json stringfy</title>
+</head>
+<body>
+    <div id="donnees">
+        <div id="prenom"></div>
+        <div id="nom"></div>
+        <div id="age"></div>
+        <div id="loisirs"></div>
+    </div>
+
+    <script>
+        let myJson = '{"nom":"srifi","prenom":"firdaous", "age":22, "loisirs":"coding et sport"}';
+        let myJs = JSON.parse(myJson) ;
+
+        document.getElementById("prenom").innerHTML = 
+        "mon prenom est " + myJs.prenom;
+
+        document.getElementById("nom").innerHTML = 
+        "mon nom est " + myJs.nom;
+
+        document.getElementById("age").innerHTML =
+        "mon age est " + myJs.age;
+
+        document.getElementById("loisirs").innerHTML = 
+        "mes loisirs sont " + myJs.loisirs;
+
+        
+    </script>
+
+</body>
+</html>

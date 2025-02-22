@@ -1,0 +1,19 @@
+{
+    "solicode" : "ecole de programmation",
+    "pays" : "maroc",
+    "formations" : [
+        "dev web", 
+        "dev mobile"
+    ],
+    "skills" : [
+        "html",
+        "css",
+        "javascript",
+        "sql",
+        "php"
+    ],
+    "addresse" : "hawma seddam",
+    "age" : 22,
+    "travailleur" : false,
+    "payment" : null 
+}
