@@ -1,0 +1,8 @@
+{
+  "models": [
+    { "name": "Model A", "basePrice": 30000 },
+    { "name": "Model B", "basePrice": 35000 },
+    { "name": "Model C", "basePrice": 40000 }
+  ],
+  "costPerKm": 0.8
+}
