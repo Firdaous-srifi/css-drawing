@@ -1,0 +1,54 @@
+:root{
+	box-sizing: border-box;
+}
+
+*,
+::before,
+::after{
+	box-sizing: border-box;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height: 100vmin;
+}
+
+.yin-yang{
+	display:block;
+	width: 10.25em;
+	height: 10.25em;
+	background: red;
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
+	border-radius: 50%;
+	border: 0.25em solid #000;
+}
+
+.yin-yang:before{
+	content: "";
+	display:block;
+	background: #000;
+	width: 5em;
+	height: 5em;
+	position: relative;
+	border-radius: 50%;
+	left: 25%;
+	border: 2em solid #fff;
+}
+
+.yin-yang:after{
+	content: "";
+	display:block;
+	background: #fff;
+	width: 5em;
+	height: 5em;
+	position: relative;
+	border-radius: 50%;
+	left: 25%;
+	border: 2em solid #000;
+}
