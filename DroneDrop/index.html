@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DroneDrop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--
+    HEADER
+    -->
+    <header class="hero">
+        <!--navbar-->
+        <nav class="navbar">
+            <!--logo-->
+            <div class="logo">
+                <img class="logo-img" src="images/logo.png" alt="">
+                <p class="logo-paragraph">DroneDrop</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Nos services</a></li>
+                <li><a href="#">Contactez-nous</a></li>
+            </ul> 
+        </nav>
+        <div class="hero-content">
+            <h1 class="header-h1">Envoyez vos colis vers de nouveaux horizons</h1>
+            <p class="header-p">Une solution de livraison par drones,garandissant une distribution rapide et sure pour vos colis vers plusieurs destinations.</p>
+            <p class="header-button">Obtenez votre devis!</p>
+            <img class="header-img" src="images/drone.png" alt="">
+        </div>
+    </header>
+
+    <!--
+    SECTIONS
+    -->
+
+    <!--livraison-->
+    <section class="livraison">
+        <h2>LIVRAISONS RAPIDES PAR DRONES: <br>VOTRE COLIS,NOTRE PRIORITE AERIENNE</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci ducimus molestiae ipsum accusantium dolorem dolores dolorum, labore, aperiam cum sit dicta obcaecati, nihil doloremque quo deserunt facilis voluptates alias quae?</p>
+        <div class="livraison-content">
+            <div class="livraison-text">
+                <h2>Vitesse adaptee</h2>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="livraison-text">
+                <h2>Vitesse adaptee</h2>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="livraison-text">
+                <h2>Vitesse adaptee</h2>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+            <div class="livraison-text">
+                <h2>Vitesse adaptee</h2>
+                <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--simulateur-->
+    <section class="simulateur">
+        <h2>SIMULATEUR</h2>
+        <form class="simulateur-form">
+            <div class="form-group">
+                <label for="poids">Poids (kg)</label>
+                <input type="number" id="poids" placeholder="Poids (kg)">
+            </div>
+            <div class="form-group dimensions">
+                <label>Dimensions</label>
+                <div class="dimension-fields">
+                    <input type="number" placeholder="Longueur (cm)">
+                    <span>×</span>
+                    <input type="number" placeholder="Largeur (cm)">
+                    <span>×</span>
+                    <input type="number" placeholder="Hauteur (cm)">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="distance">Distance</label>
+                <select id="distance">
+                    <option>Moins de 10km</option>
+                    <option>Entre 10km et 50km</option>
+                    <option>Entre 50km et 300km</option>
+                    <option>Plus de 300km</option>
+                </select>
+            </div>
+            
+        </form>
+        <br><br>
+        <button type="submit" class="btn">Calculez maintenant!</button>
+    </section>
+    
+
+    <!--vos devis-->
+    <section class="vos-devis">
+        <h2>VOS DEVIS</h2>
+        <div class="devis-container">
+            <div class="devis-card">
+                <h3>Livraison Standard</h3>
+                <p>3-5 jours</p>
+                <h2>MAD 289,56</h2>
+                <button class="details-btn">voir plus de détails</button>
+            </div>
+            <div class="devis-card">
+                <h3>Livraison Express</h3>
+                <p>1-2 jours</p>
+                <h2>MAD 675,39</h2>
+                <button class="details-btn">voir plus de détails</button>
+            </div>
+        </div>
+        <button class="print-btn">Imprimer les devis</button>
+    </section>
+    
+
+
+    <!--
+    FOOTER
+    -->
+    <footer >
+        <div class="footer">
+        <div class="column">
+            <h3>Liens d'accès rapides</h3>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Nos Services</a></li>
+                <li><a href="#">Contactez-nous</a></li>
+                <li><a href="#">Termes et Conditions</a></li>
+                <li><a href="#">Informations Complémentaires</a></li>
+                <li><a href="#">Politique des Cookies</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3>Informations sur la société</h3>
+            <ul>
+                <li><a href="#">À propos de DroneSnap</a></li>
+                <li><a href="#">Vision et Innovation</a></li>
+                <li><a href="#">Carrières</a></li>
+                <li><a href="#">Partenariats</a></li>
+                <li><a href="#">Investisseurs</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3>Suivez-nous</h3>
+            <div class="social-icons">
+                <a href="#" src="/images/facebook-logo.png" ></a>
+                <a href="#" src="/images/instagram-logo.png" ></a>
+            </div>
+        </div>
+    </div>
+        <div class="footer2 footer">
+            <p>2024@-all rights reserved</p>
+        </div>
+
+    </footer>
+
+    <!--
+    JAVASCRIPT LINK
+    -->
+    <script src="script.js"></script>
+</body>
+</html>

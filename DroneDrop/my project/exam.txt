@@ -1,0 +1,45 @@
+EFM FRONT-END
+CONTEXTE :
+Le projet vise à créer un simulateur permettant d'estimer le coût d'envoi de colis par drone à travers tout le
+Maroc, en prenant en compte le poids du colis, ses dimensions, et la distance totale de livraison.
+Le calcul de la tarification dépend de la combinaison de coûts de base pour le poids, frais additionnels pour les
+dimensions, et tarifs de distance ainsi que le type de livraison (standard ou express).
+Formule de calcul pour la livraison standard :
+Frais de livraison standard = Base + (Poids × Coefficient de poids) + (Somme des dimensions × Coefficient de
+dimension) + Frais additionnels de distance
+Formule de calcul pour la livraison express :
+Frais de livraison express = Base express + (Poids × Coefficient de poids express) + (Somme des dimensions ×
+Coefficient de dimension express) + Frais additionnels de distance express
+N.B:
+Tous les coefficients de calcul doivent être récupérés au niveau de votre code à partir du fichier JSON.
+PARTIE A : DESKTOP (32 PTS)
+SECTION 1 : HEADER (4 PTS)
+1. A partir de l’image “section 1”, réaliser la première section contenant :
+a. Le haut de la page avec le logo et un menu de navigation (1 point)
+b. Le contenu textuel et le bouton (1 point)
+2. Ajouter un arrière-plan en dégradé (1 point)
+3. Ajouter l’image du drone (1 point)
+Section 1
+SECTION 2 : LE SERVICE DRONEDROP (3 PTS)
+4. Ajouter la section suivante qui décrit le service de “DroneDrop”. (3 points)
+Section 2
+SECTION 3 : LE SIMULATEUR (17 PTS)
+5. A partir de l’image “section 3”, réaliser le formulaire permettant à l'utilisateur la simulation des frais
+d’envoi de son colis. (3 points)
+6. Envoi du formulaire :
+a. Ajouter le code qui permet de changer la couleur d’arrière plan du bouton “Calculez
+maintenant” du formulaire lors du survol du pointeur de la souris (1 point)
+b. Alimenter la liste déroulante (distance) à partir du fichier JSON. (3 points)
+c. Valider les champs du formulaire (tous les champs sont requis) (2 points)
+d. Ecrire le programme JavaScript qui permet de calculer le coût de l’envoi du colis en utilisant
+les taux mentionnés dans le fichier JSON (8 PTS)
+Section 3
+SECTION 4 : LES RÉSULTATS (5 PTS)
+7. A partir de l’image “section 4”, réaliser la section où les résultats seront affichés. (3 points)
+8. Ajouter le code qui permet d’afficher les résultats calculés auparavant dans cette section. (1 point)
+9. La section des résultats n’est affichée que lorsque le calcul est terminé. (1 point)
+Section 4
+SECTION 5 : FOOTER (3 PTS)
+10. A partir de l’image “section 5”, réaliser la dernière section de votre page web. (3 points)
+PARTIE B : MOBILE (8 PTS)
+11. Adapter l’affichage des 5 sections dans la version mobile. (8 points)
