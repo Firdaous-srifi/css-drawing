@@ -1,0 +1,198 @@
+$basic-color: #ffffff;
+$basic-reverse-color: #000000;
+$rocket-glass-color: #88c9e8;
+$rocket-glass-color-two: #c3dff7;
+$rocket-main-color: #FFB750;
+$rocket-side-color: #fcc77e;
+$rocket-triangle-color: #f7b967;
+$rocket-trail-color: #F07356;
+$cloud-light-color: #fcf5e3;
+$cloud-light-color-two: #fdf7e7;
+$cloud-light-blur-color: #ffe4b5;
+
+$rocket-border-width: 1.5px;
+$gradient-color-list: rgba(27,23,106,1) 0%, rgba(38,38,158,1) 17%, rgba(123,123,196,1) 42%, rgba(185,185,224,1) 56%, rgba(227,227,242,1) 70%, rgba(255,255,255,1) 89%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%;
+
+@mixin linear-gradient($direction, $colors) {
+  background: linear-gradient($direction, $colors);
+}
+
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+
+body {
+  @include linear-gradient(180deg, $gradient-color-list);
+}
+
+%border {
+  border-style: solid;
+  border-color: $basic-reverse-color;
+}
+
+.picture-container {
+  max-width: 1080px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  .cloud {
+    position: absolute;
+    bottom: 0%;
+    width: 350px;
+    height: 100px;
+    .cloud-puff {
+      position: absolute;
+      border-radius: 50%;
+      background-color: $basic-color;
+      @extend %border;
+      &.one {
+        bottom: 0;
+        left: 0;
+        width: 70px;
+        height: 60px;
+        border-width: 2px 0 0 1px;
+      }
+      &.two {
+        bottom: 20px;
+        left: 63px;
+        width: 70px;
+        height: 50px;
+        border-width: 2px 0 0;
+      }
+      &.three {
+        bottom: 16px;
+        left: 133px;
+        width: 90px;
+        height: 70px;
+        border-width: 2px 0 0;
+      }
+      &.four {
+        bottom: 18px;
+        left: 222px;
+        width: 50px;
+        height: 50px;
+        border-width: 2px 0 0;
+      }
+      &.five {
+        bottom: 10px;
+        left: 270px;
+        width: 70px;
+        height: 60px;
+        border-width: 2px 2px 0 0;
+      }
+    }
+    .light {
+      border-radius: 50%;
+      position: absolute;
+      opacity: 0.5;
+      box-shadow: 1px 1px 20px 2px $cloud-light-blur-color;
+      &.one {
+        width: 280px;
+        height: 280px;
+        background-color: $cloud-light-color;
+        top: -230%;
+        left: -10%;
+        z-index: -2;
+      }
+      &.two {
+        width: 190px;
+        height: 190px;
+        background-color: $cloud-light-color-two;
+        top: -140%;
+        left: 45%;
+        z-index: -3;
+      }
+    }
+  }
+  .rocket {
+    position: absolute;
+    bottom: 200px;
+    .rocket-part {
+      &.body {
+        width: 50px;
+        height: 150px;
+        background-color: $rocket-main-color;
+        @extend %border;
+        border-left-width: $rocket-border-width;
+        border-right-width: $rocket-border-width;
+        border-radius: 25px 25px 15px 15px / 65px 65px 10px 10px;
+      }
+      &.circle {
+        width: 30px;
+        height: 30px;
+        background-color: $rocket-glass-color;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include translate(-50%, 0);
+        @extend %border;
+        border-width: 1px;
+        &::before {
+          content: " ";
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          left: 40%;
+          top: 12%;
+          background-color: $rocket-glass-color-two;
+          border-radius: 50%;
+        }
+      }
+      &.side {
+        position: absolute;
+        background-color: $rocket-side-color;
+        @extend %border;
+        border-width: $rocket-border-width;
+        width: 18px;
+        height: 75px;
+        border-radius: 25px;
+        z-index: -2;
+        &.one {
+          top: 40%;
+          left: -18px;
+        }
+        &.two {
+          top: 40%;
+          right: -18px;
+        }
+      }
+      &.triangle {
+        position: absolute;
+        background-color: $rocket-triangle-color;
+        z-index: -1;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        @extend %border;
+        border-width: 2px;
+        &.one {
+          transform: skew(-30deg);
+          top: 55%;
+          left: -20%;
+        }
+        &.two {
+          transform: skew(30deg);
+          top: 55%;
+          left: 35%;
+        }
+      }
+    }
+    .trail {
+      position: absolute;
+      bottom: -95%;
+      left: -33.5%;
+      border-bottom: 140px solid $rocket-trail-color;
+      opacity: 0.9;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      height: 0;
+      width: 38px;
+    }
+  }
+}
