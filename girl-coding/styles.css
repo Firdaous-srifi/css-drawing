@@ -54,10 +54,10 @@
   }
   
   .cartoon {
-    --skin: #fca; #963;
-    --line: #9639; #6309;
+    --skin: #fca #963;
+    --line: #9639 #6309;
     --shadow: rgba(80,0,0,0.075);
-    --hair: #630; #210;
+    --hair: #630 #210;
     --shirt: #887389;
     --animation: ""; /* replace with eyemove for eyes animation; */
     width: 80vmin;
@@ -287,7 +287,7 @@
     height: 100.25%;
     top: -0.125%;
     left: -0.125%;
-    background: var(--shirt); #887389; #00A9A5;
+    background: var(--shirt) #887389 #00A9A5 ;
     border-radius: 50%;
     clip-path: polygon(0% 0%, 35% 0%, 50% 10%, 65% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
