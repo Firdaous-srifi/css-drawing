@@ -29,6 +29,7 @@ html, body{
 	border: 0.25em solid #000;
 }
 
+/*points*/
 .yin-yang:before{
 	content: "";
 	display:block;

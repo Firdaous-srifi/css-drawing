@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice JSON</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercice : Charger des données JSON</h1>
+    <h2>Liste des employés</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Rôle</th>
+                <th>Âge</th>
+                <th>Département</th>
+            </tr>
+        </thead>
+        <tbody id="employeeTable">
+            <!-- Les données seront insérées ici -->
+        </tbody>
+    </table>
+    <button id="Marketing">Afficher uniquement le Marketing</button>
+    
+    <script src="script2.js"></script>
+</body>
+</html>
