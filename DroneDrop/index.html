@@ -1,165 +1,185 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DroneDrop</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!--
-    HEADER
-    -->
-    <header class="hero">
-        <!--navbar-->
-        <nav class="navbar">
-            <!--logo-->
-            <div class="logo">
-                <img class="logo-img" src="images/logo.png" alt="">
-                <p class="logo-paragraph">DroneDrop</p>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Nos services</a></li>
-                <li><a href="#">Contactez-nous</a></li>
-            </ul> 
-        </nav>
-        <div class="hero-content">
-            <h1 class="header-h1">Envoyez vos colis vers de nouveaux horizons</h1>
-            <p class="header-p">Une solution de livraison par drones,garandissant une distribution rapide et sure pour vos colis vers plusieurs destinations.</p>
-            <p class="header-button">Obtenez votre devis!</p>
-            <img class="header-img" src="images/drone.png" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="fr-sectin">
+      <div class="nav-bar">
+        <div class="logo">
+          <img src="parcel.png" alt="box" srcset="" />
+          <h2>droneDrop</h2>
         </div>
-    </header>
-
-    <!--
-    SECTIONS
-    -->
-
-    <!--livraison-->
-    <section class="livraison">
-        <h2>LIVRAISONS RAPIDES PAR DRONES: <br>VOTRE COLIS,NOTRE PRIORITE AERIENNE</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci ducimus molestiae ipsum accusantium dolorem dolores dolorum, labore, aperiam cum sit dicta obcaecati, nihil doloremque quo deserunt facilis voluptates alias quae?</p>
-        <div class="livraison-content">
-            <div class="livraison-text">
-                <h2>Vitesse adaptee</h2>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-            </div>
-            <div class="livraison-text">
-                <h2>Vitesse adaptee</h2>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-            </div>
-            <div class="livraison-text">
-                <h2>Vitesse adaptee</h2>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-            </div>
-            <div class="livraison-text">
-                <h2>Vitesse adaptee</h2>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-            </div>
+        <div class="maine-ul">
+          <div id="icon" class="icone"><i class="bx bx-menu"></i></div>
+          <ul class="list">
+            <li><a href="">accueil</a></li>
+            <li><a href="">nos servise</a></li>
+            <li><a href="">contacter-nous</a></li>
+          </ul>
         </div>
-
-    </section>
-
-    <!--simulateur-->
-    <section class="simulateur">
-        <h2>SIMULATEUR</h2>
-        <form class="simulateur-form">
-            <div class="form-group">
-                <label for="poids">Poids (kg)</label>
-                <input type="number" id="poids" placeholder="Poids (kg)">
-            </div>
-            <div class="form-group dimensions">
-                <label>Dimensions</label>
-                <div class="dimension-fields">
-                    <input type="number" placeholder="Longueur (cm)">
-                    <span>×</span>
-                    <input type="number" placeholder="Largeur (cm)">
-                    <span>×</span>
-                    <input type="number" placeholder="Hauteur (cm)">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="distance">Distance</label>
-                <select id="distance">
-                    <option>Moins de 10km</option>
-                    <option>Entre 10km et 50km</option>
-                    <option>Entre 50km et 300km</option>
-                    <option>Plus de 300km</option>
-                </select>
-            </div>
-            
-        </form>
-        <br><br>
-        <button type="submit" class="btn">Calculez maintenant!</button>
-    </section>
-    
-
-    <!--vos devis-->
-    <section class="vos-devis">
-        <h2>VOS DEVIS</h2>
-        <div class="devis-container">
-            <div class="devis-card">
-                <h3>Livraison Standard</h3>
-                <p>3-5 jours</p>
-                <h2>MAD 289,56</h2>
-                <button class="details-btn">voir plus de détails</button>
-            </div>
-            <div class="devis-card">
-                <h3>Livraison Express</h3>
-                <p>1-2 jours</p>
-                <h2>MAD 675,39</h2>
-                <button class="details-btn">voir plus de détails</button>
-            </div>
+      </div>
+      <div class="cont">
+        <div class="info">
+          <h2>Envoyez vos colis vers de nouveaux horizons</h2>
+          <p>
+            Une solution de livraison par drones, garantissant une distribution
+            rapide et sûre pour vos colis vers plusieurs destinations.
+          </p>
+          <button>Obtenez votre devis!</button>
         </div>
-        <button class="print-btn">Imprimer les devis</button>
-    </section>
-    
-
-
-    <!--
-    FOOTER
-    -->
-    <footer >
-        <div class="footer">
-        <div class="column">
-            <h3>Liens d'accès rapides</h3>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Nos Services</a></li>
-                <li><a href="#">Contactez-nous</a></li>
-                <li><a href="#">Termes et Conditions</a></li>
-                <li><a href="#">Informations Complémentaires</a></li>
-                <li><a href="#">Politique des Cookies</a></li>
-            </ul>
-        </div>
-        <div class="column">
-            <h3>Informations sur la société</h3>
-            <ul>
-                <li><a href="#">À propos de DroneSnap</a></li>
-                <li><a href="#">Vision et Innovation</a></li>
-                <li><a href="#">Carrières</a></li>
-                <li><a href="#">Partenariats</a></li>
-                <li><a href="#">Investisseurs</a></li>
-            </ul>
-        </div>
-        <div class="column">
-            <h3>Suivez-nous</h3>
-            <div class="social-icons">
-                <a href="#" src="/images/facebook-logo.png" ></a>
-                <a href="#" src="/images/instagram-logo.png" ></a>
-            </div>
-        </div>
+        <div class="img"><img src="drone.png" alt="" /></div>
+      </div>
     </div>
-        <div class="footer2 footer">
-            <p>2024@-all rights reserved</p>
+    <div class="sec-section">
+      <div class="infp">
+        <div class="head">
+          <h1>
+            Livraisons rapides par drones : Votre colis, notre priorité
+            aérienne!
+          </h1>
+          <p>
+            Livraisons nationales assurées avec deux vitesses adaptées à vos
+            besoins. Nos drones fiables garantissent une distribution rapide et
+            sécurisée de vos colis, où que vous soyez, en offrant une solution
+            logistique efficiente et innovante.
+          </p>
         </div>
+        <div class="paragraf">
+          <div class="fr">
+            <div class="info1">
+              <h2>Vitesse adaptée</h2>
+              <p>Standard ou Express, votre choix</p>
+            </div>
+            <div class="info1">
+              <h2>Fiabilité constante</h2>
+              <p>Drones pour des livraisons ponctuelles</p>
+            </div>
+          </div>
+          <div class="se">
+            <div class="info1">
+              <h2>Sécurité garantie</h2>
+              <p>Technologies avancées pour une livraison sûre</p>
+            </div>
+            <div class="info1">
+              <h2>Service clientèle</h2>
+              <p>Soutien attentif à chaque étape</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="thr-section">
+      <h1>SIMULATEUR</h1>
+      <div class="form">
+        <div class="inpute">
+          <label for="">poid</label>
+          <input id="Poids" type="number" value="" placeholder="Poids (kg)" />
+        </div>
+        <div class="inpute">
+          <label for="">dimention</label>
+          <input
+            id="Longueur"
+            type="number"
+            value=""
+            placeholder="Longueur (cm)"
+          />
+        </div>
+        <div class="inpute">
+          <label for="">dimention</label>
+          <input
+            id="Largeur"
+            type="number"
+            value=""
+            placeholder="Largeur (cm)"
+          />
+        </div>
+        <div class="inpute">
+          <label for="">dimention</label>
+          <input
+            id="Hauteur"
+            type="number"
+            value=""
+            placeholder="Hauteur (cm)"
+          />
+        </div>
+        <div class="inpute">
+          <label for="">distanc</label>
+          <select name="" id="select"></select>
+        </div>
+      </div>
+      <button id="calc">Imprimer les devis</button>
+    </div>
+    <div class="for-section" id="section">
+      <h1>VOS DEVIS</h1>
+      <div class="cardes">
+        <div class="card">
+          <h3>Livraison Standard</h3>
+          <p>3-5 jours</p>
+          <span id="res">MAD 0</span>
+          <button>Voir plus de détails</button>
+        </div>
+        <div class="card">
+          <h3>Livraison Express</h3>
+          <p>1-2 jours</p>
+          <span id="res2">MAD 0</span>
+          <button>Voir plus de détails</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="logo">
+        <img src="parcel.png" alt="" />
+      </div>
 
-    </footer>
-
-    <!--
-    JAVASCRIPT LINK
-    -->
-    <script src="script.js"></script>
-</body>
+      <div class="sections">
+        <div class="liens">
+          <h3>Liens d’accès rapides</h3>
+          <ul>
+            <li>Accueil</li>
+            <li>Nos Services</li>
+            <li>Contactez-nous</li>
+            <li>Termes et conditions</li>
+            <li>Informations complémentaires</li>
+            <li>Paramètres des cookies</li>
+          </ul>
+        </div>
+        <div class="indormation">
+          <h3>Informations sur la société</h3>
+          <ul>
+            <li>A propos de DroneDrop Vision et innovation</li>
+            <li>Vision et innovation</li>
+            <li>Carrières</li>
+            <li>Partenariats</li>
+            <li>Investisseurs</li>
+          </ul>
+        </div>
+        <div class="social">
+          <h3>Suivez-nous</h3>
+          <ul>
+            <li>
+              <img src="facebook-logo.png" alt="" srcset="" />
+            </li>
+            <li>
+              <img src="instagram-logo.png" alt="" srcset="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="maine.js"></script>
+  </body>
 </html>
