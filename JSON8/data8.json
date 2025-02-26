@@ -1,0 +1,48 @@
+    {
+        "store": {
+        "products": [
+            { "id": 1, "name": "Laptop", "category": "Electronics", "price": 1200 },
+            { "id": 2, "name": "Smartphone", "category": "Electronics", "price": 800 },
+            { "id": 3, "name": "Desk", "category": "Furniture", "price": 300 },
+            { "id": 4, "name": "Chair", "category": "Furniture", "price": 150 },
+            { "id": 5, "name": "Headphones", "category": "Accessories", "price": 100 }
+        ],
+        "orders": [
+            {
+            "orderId": "ORD001",
+            "customer": "John Doe",
+            "date": "2024-01-15",
+            "totalAmount": 2000,
+            "status": "shipped",
+            "products": [ 
+                { "productId": 1, "quantity": 1 }, 
+                { "productId": 2, "quantity": 1 } ]
+            },
+            {
+            "orderId": "ORD002",
+            "customer": "Jane Smith",
+            "date": "2024-01-16",
+            "totalAmount": 1000,
+            "status": "pending",
+            "products": [ { "productId": 3, "quantity": 2 } ]
+            },
+            {
+            "orderId": "ORD003",
+            "customer": "Alice Brown",
+            "date": "2024-01-14",
+            "totalAmount": 450,
+            "status": "delivered",
+            "products": [ { "productId": 5, "quantity": 3 } ]
+            },
+            {
+            "orderId": "ORD004",
+            "customer": "Bob Green",
+            "date": "2024-01-13",
+            "totalAmount": 1300,
+            "status": "shipped",
+            "products": [ { "productId": 2, "quantity": 1 }, { "productId": 4, "quantity": 2 } ]
+            }
+        ]
+        }
+    }
+    

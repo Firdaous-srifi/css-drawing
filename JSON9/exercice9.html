@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservations</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #4CAF50;
+        }
+
+        /* Filters Section */
+        .filters {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            gap: 15px;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .filters label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .filters select,
+        .filters input,
+        .filters button {
+            padding: 8px 12px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .filters button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .filters button:hover {
+            background-color: #45a049;
+        }
+
+        /* Table Styles */
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        thead {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+            color: black;
+        }
+
+        th {
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        td {
+            font-size: 14px;
+        }
+
+        .empty-message {
+            text-align: center;
+            font-size: 16px;
+            color: #888;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hotel Reservations Management</h1>
+
+    <!-- Filters Section -->
+    <div class="filters">
+        <label for="statusFilter">Status:</label>
+        <select id="statusFilter">
+            <option value="">All</option>
+            <option value="confirmed">Confirmed</option>
+            <option value="pending">Pending</option>
+            <option value="canceled">Canceled</option>
+        </select>
+
+        <label for="dateFilterStart">Start Date:</label>
+        <input type="date" id="dateFilterStart">
+
+        <label for="dateFilterEnd">End Date:</label>
+        <input type="date" id="dateFilterEnd">
+
+        <label for="sortFilter">Sort By:</label>
+        <select id="sortFilter">
+            <option value="date">Date</option>
+            <option value="amount">Total Amount</option>
+        </select>
+
+        <button id="applyFilters">Apply Filters</button>
+    </div>
+
+    <!-- Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Reservation ID</th>
+                <th>Customer</th>
+                <th>Check-in</th>
+                <th>Check-out</th>
+                <th>Total Amount</th>
+                <th>Status</th>
+                <th>Rooms & Details</th>
+            </tr>
+        </thead>
+        <tbody id="reservationList">
+        </tbody>
+    </table>
+
+    <!-- Message if no results are found -->
+    <div id="noResults" class="empty-message" style="display: none;">
+        No reservations match the selected filters.
+    </div>
+    <script src="script9.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Projets</title>
+    <style>
+        /* Styles CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .filters {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        select, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+        }
+
+        table thead {
+            background-color: #007bff;
+            color: white;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gestion des Projets</h1>
+
+    <!-- Filtres et Tri -->
+    <div class="filters">
+        <select id="filterStatus">
+            <option value="">-- Filtrer par statut --</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+            <option value="Not Started">Not Started</option>
+        </select>
+
+        <select id="sortBudget">
+            <option value="">-- Trier par budget --</option>
+            <option value="asc">Budget croissant</option>
+            <option value="desc">Budget décroissant</option>
+        </select>
+
+        <button id="applyFilters">Appliquer les filtres</button>
+    </div>
+
+    <!-- Tableau des projets -->
+    <table id="projectTable">
+        <thead >
+            <tr>
+                <th>Département</th>
+                <th>Projet</th>
+                <th>Équipe</th>
+                <th>Budget (€)</th>
+                <th>Statut</th>
+            </tr>
+        </thead>
+        <tbody id="affichage">
+            <!-- Les projets seront affichés ici -->
+        </tbody>
+    </table>
+    <script src="script6.js"></script>
+</body>
+</html>

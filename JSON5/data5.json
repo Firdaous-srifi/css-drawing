@@ -1,0 +1,47 @@
+    {
+        "movies": {
+        "action": [
+            {
+            "title": "Mad Max: Fury Road",
+            "director": "George Miller",
+            "year": 2015,
+            "rating": 8.1
+            },
+            {
+            "title": "John Wick",
+            "director": "Chad Stahelski",
+            "year": 2014,
+            "rating": 7.4
+            }
+        ],
+        "drama": [
+            {
+            "title": "The Shawshank Redemption",
+            "director": "Frank Darabont",
+            "year": 1994,
+            "rating": 9.3
+            },
+            {
+            "title": "Forrest Gump",
+            "director": "Robert Zemeckis",
+            "year": 1994,
+            "rating": 8.8
+            }
+        ],
+        "comedy": [
+            {
+            "title": "The Grand Budapest Hotel",
+            "director": "Wes Anderson",
+            "year": 2014,
+            "rating": 8.1
+            },
+            {
+            "title": "Superbad",
+            "director": "Greg Mottola",
+            "year": 2007,
+            "rating": 7.6
+            }
+        ]
+        }
+    }
+    

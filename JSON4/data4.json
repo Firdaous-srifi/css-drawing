@@ -1,0 +1,24 @@
+{
+        "events": {
+        "Paris": {
+            "concerts": [
+            { "title": "Coldplay Live", "date": "2025-02-15", "price": 100 },
+            { "title": "Beyoncé Renaissance Tour", "date": "2025-03-10", "price": 150 }
+            ],
+            "exhibitions": [
+            { "title": "Van Gogh Expo", "date": "2025-01-25", "price": 20 },
+            { "title": "Science Museum Day", "date": "2025-04-01", "price": 15 }
+            ]
+        },
+        "Lyon": {
+            "concerts": [
+            { "title": "Imagine Dragons", "date": "2025-02-20", "price": 80 },
+            { "title": "Ed Sheeran", "date": "2025-03-05", "price": 120 }
+            ],
+            "sports": [
+            { "title": "OL vs PSG", "date": "2025-01-28", "price": 60 },
+            { "title": "Basketball Final", "date": "2025-03-18", "price": 50 }
+            ]
+        }
+        }
+}

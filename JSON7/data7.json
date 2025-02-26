@@ -1,0 +1,55 @@
+{
+        "university": {
+        "courses": [
+            {
+            "courseId": 101,
+            "courseName": "Mathematics",
+            "subject": "Mathematics",
+            "professor": "Dr. Smith",
+            "students": [
+                {
+                "name": "John Doe",
+                "grade": 85
+                },
+                {
+                "name": "Jane Smith",
+                "grade": 92
+                }
+            ]
+            },
+            {
+            "courseId": 102,
+            "courseName": "Physics",
+            "subject": "Science",
+            "professor": "Dr. Lee",
+            "students": [
+                {
+                "name": "Tommy Brown",
+                "grade": 78
+                },
+                {
+                "name": "Emily White",
+                "grade": 88
+                }
+            ]
+            },
+            {
+            "courseId": 103,
+            "courseName": "History",
+            "subject": "Humanities",
+            "professor": "Dr. Roberts",
+            "students": [
+                {
+                "name": "Michael Jordan",
+                "grade": 95
+                },
+                {
+                "name": "Sarah Williams",
+                "grade": 82
+                }
+            ]
+            }
+        ]
+        }
+}
+    

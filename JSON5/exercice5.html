@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue de Films</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Catalogue de Films</h1>
+    
+    <label for="minRating">Note minimale :</label>
+    <input type="number" id="minRating" placeholder="Entrez une note (ex. 8)" />
+    <button id="filterRating">Filtrer par Note</button>
+    
+    <label for="sortYear">Trier par année :</label>
+    <select id="sortYear">
+        <option value="">--------Inserez un ordre--------</option>
+        <option value="asc">Du plus ancien au plus récent</option>
+        <option value="desc">Du plus récent au plus ancien</option>
+    </select>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Genre</th>
+                <th>Titre</th>
+                <th>Réalisateur</th>
+                <th>Année</th>
+                <th>Note</th>
+            </tr>
+        </thead>
+        <tbody id="movieTable">
+            <!-- Les films seront insérés ici -->
+        </tbody>
+    </table>
+    
+    <script src="script5.js"></script>
+</body>
+</html>

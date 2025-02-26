@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulation JSON</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .btn {
+            display: inline-block;
+            margin: 5px 0;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercice : Manipulation JSON</h1>
+        
+        <h2>Liste des produits</h2>
+        <button id="show-products" class="btn">Afficher les produits</button>
+        <div id="product-list" class="output"></div>
+
+        <h2>Rechercher un produit PAR ID</h2>
+        <input type="number" id="search-id" placeholder="ID du produit">
+        <button id="find-product" class="btn">Rechercher</button>
+        <div id="search-result" class="output"></div>
+
+        <!-- Filtrer par catégorie -->
+        <h2>3. Filtrer par catégorie</h2>
+        <select id="filter-category" placeholder="Entrez une catégorie">
+        </select>
+        <button id="filter-products" class="btn">Filtrer</button>
+        <div id="filter-result" class="output"></div>
+
+        <!-- Calcul du stock total -->
+        <h2>4. Calculer le total des stocks</h2>
+        <button id="calculate-stock" class="btn">Calculer</button>
+        <div id="total-stock" class="output"></div>
+
+        <!-- Revenus potentiels -->
+        <h2>5. Calculer les revenus potentiels</h2>
+        <button id="calculate-revenue" class="btn">Calculer</button>
+        <div id="potential-revenue" class="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

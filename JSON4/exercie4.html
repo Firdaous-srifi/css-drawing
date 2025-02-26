@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Événements</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gestion des Événements</h1>
+    <div>
+        <label for="city">Choisissez une ville :</label>
+        <select id="city">
+            <option value="all">Toutes les villes</option>
+        </select>
+        <label for="maxPrice">Prix maximum :</label>
+        <input type="number" id="maxPrice" placeholder="Entrez un prix" />
+        <button id="filter">Appliquer les filtres</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Ville</th>
+                <th>Type d'Événement</th>
+                <th>Titre</th>
+                <th>Date</th>
+                <th>Prix (€)</th>
+            </tr>
+        </thead>
+        <tbody id="eventTable">
+            <!-- Les événements seront insérés ici -->
+        </tbody>
+    </table>
+    <script src="script4.js"></script>
+</body>
+</html>

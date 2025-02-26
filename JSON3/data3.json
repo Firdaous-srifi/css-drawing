@@ -1,0 +1,29 @@
+{
+    "library": {
+      "name": "Bibliothèque Municipale",
+      "location": "Marseille",
+      "books": {
+        "fiction": {
+          "fantasy": [
+            { "title": "Le Seigneur des Anneaux", "author": "J.R.R. Tolkien", "year": 1954 },
+            { "title": "Harry Potter à l'école des sorciers", "author": "J.K. Rowling", "year": 1997 }
+          ],
+          "thriller": [
+            { "title": "Le Silence des Agneaux", "author": "Thomas Harris", "year": 1988 },
+            { "title": "Gone Girl", "author": "Gillian Flynn", "year": 2012 }
+          ]
+        },
+        "non_fiction": {
+          "history": [
+            { "title": "Sapiens", "author": "Yuval Noah Harari", "year": 2011 },
+            { "title": "L'Art de la Guerre", "author": "Sun Tzu", "year": -500 }
+          ],
+          "science": [
+            { "title": "Une Brève Histoire du Temps", "author": "Stephen Hawking", "year": 1988 },
+            { "title": "Le Gène égoïste", "author": "Richard Dawkins", "year": 1976 }
+          ]
+        }
+      }
+    }
+  }
+  

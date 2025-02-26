@@ -1,0 +1,55 @@
+{
+    "organization": {
+        "name": "TechCorp",
+        "departments": {
+            "IT": {
+                "projects": [
+                    {
+                        "name": "Infrastructure Upgrade",
+                        "team": ["Alice", "Bob", "Charlie"],
+                        "budget": 50000,
+                        "status": "In Progress"
+                    },
+                    {
+                        "name": "Cloud Migration",
+                        "team": ["David", "Eve"],
+                        "budget": 30000,
+                        "status": "Completed"
+                    }
+                ]
+            },
+            "HR": {
+                "projects": [
+                    {
+                        "name": "Employee Onboarding",
+                        "team": ["Fiona", "Grace"],
+                        "budget": 10000,
+                        "status": "In Progress"
+                    },
+                    {
+                        "name": "HR Portal Upgrade",
+                        "team": ["Hannah"],
+                        "budget": 15000,
+                        "status": "Not Started"
+                    }
+                ]
+            },
+            "Marketing": {
+                "projects": [
+                    {
+                        "name": "Ad Campaign 2025",
+                        "team": ["Ivy", "Jack"],
+                        "budget": 20000,
+                        "status": "In Progress"
+                    },
+                    {
+                        "name": "Website Redesign",
+                        "team": ["Karen"],
+                        "budget": 12000,
+                        "status": "Completed"
+                    }
+                ]
+            }
+        }
+    }
+}

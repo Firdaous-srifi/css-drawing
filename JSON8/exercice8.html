@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des commandes</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        select, input {
+            padding: 5px;
+        }
+        .filter-section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gestion des commandes du magasin</h1>
+
+    <!-- Section de filtres -->
+    <div class="filter-section">
+        <label for="statusFilter">Filtrer par statut :</label>
+        <select id="statusFilter">
+            <option value="">Tous</option>
+            <option value="shipped">shipped</option>
+            <option value="pending">pending</option>
+            <option value="delivered">delivered</option>
+        </select>
+
+        <label for="amountFilter">Filtrer par montant :</label>
+        <select id="amountFilter">
+            <option value="">Tous</option>
+            <option value="lessThan1000">Inférieur à 1000</option>
+            <option value="1000to2000">Entre 1000 et 2000</option>
+            <option value="greaterThan2000">Supérieur à 2000</option>
+        </select>
+
+        <label for="dateFilter">Filtrer par date :</label>
+        <input type="date" id="dateFilter">
+
+        <label for="sortFilter">Trier par :</label>
+        <select id="sortFilter">
+            <option value="date-asc">Date croissante</option>
+            <option value="date-desc">Date décroissante</option>
+            <option value="amount-asc">Montant croissant</option>
+            <option value="amount-desc">Montant décroissant</option>
+        </select>
+        
+        <button id="applyFilters">Appliquer les filtres</button>
+    </div>
+
+    <!-- Tableau des commandes -->
+    <table id="orderTable">
+        <thead>
+            <tr>
+                <th>Commande</th>
+                <th>Client</th>
+                <th>Date</th>
+                <th>Montant Total</th>
+                <th>Statut</th>
+                <th>Produits</th>
+            </tr>
+        </thead>
+        <tbody id="orderList"></tbody>
+    </table>
+
+    <script src="script8.js"></script>
+</body>
+</html>

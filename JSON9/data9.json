@@ -1,0 +1,45 @@
+{
+    "hotel": {
+        "rooms": [
+            { "id": 1, "type": "Single", "price": 100, "amenities": ["WiFi", "TV"] },
+            { "id": 2, "type": "Double", "price": 150, "amenities": ["WiFi", "TV", "Balcony"] },
+            { "id": 3, "type": "Suite", "price": 300, "amenities": ["WiFi", "TV", "Kitchen", "Jacuzzi"] }
+        ],
+        "reservations": [
+            {
+                "reservationId": "RES001",
+                "customer": "Alice Green",
+                "checkIn": "2025-01-10",
+                "checkOut": "2025-01-15",
+                "totalAmount": 750,
+                "status": "confirmed",
+                "rooms": [
+                    { "roomId": 1, "nights": 3 },
+                    { "roomId": 2, "nights": 2 }
+                ]
+            },
+            {
+                "reservationId": "RES002",
+                "customer": "John White",
+                "checkIn": "2025-01-12",
+                "checkOut": "2025-01-14",
+                "totalAmount": 600,
+                "status": "pending",
+                "rooms": [
+                    { "roomId": 3, "nights": 2 }
+                ]
+            },
+            {
+                "reservationId": "RES003",
+                "customer": "Emma Brown",
+                "checkIn": "2025-01-15",
+                "checkOut": "2025-01-20",
+                "totalAmount": 1000,
+                "status": "canceled",
+                "rooms": [
+                    { "roomId": 2, "nights": 5 }
+                ]
+            }
+        ]
+    }
+}

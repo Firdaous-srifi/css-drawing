@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Laptop",
+        "category": "Electronics",
+        "price": 899.99,
+        "stock": 45
+    },
+    {
+        "id": 2,
+        "name": "Smartphone",
+        "category": "Electronics",
+        "price": 699.99,
+        "stock": 120
+    },
+    {
+        "id": 3,
+        "name": "Book",
+        "category": "Books",
+        "price": 14.99,
+        "stock": 350
+    },
+    {
+        "id": 4,
+        "name": "Headphones",
+        "category": "Electronics",
+        "price": 49.99,
+        "stock": 80
+    },
+    {
+        "id": 5,
+        "name": "Table",
+        "category": "Furniture",
+        "price": 129.99,
+        "stock": 25
+    }
+]

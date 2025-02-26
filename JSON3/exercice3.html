@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice JSON : Bibliothèque</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bibliothèque : Liste des Livres</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Catégorie Principale</th>
+                <th>Sous-Catégorie</th>
+                <th>Titre</th>
+                <th>Auteur</th>
+                <th>Année</th>
+            </tr>
+        </thead>
+        <tbody id="bookTable">
+            <!-- Les livres seront insérés ici -->
+        </tbody>
+    </table>
+    <button id="filter">Afficher uniquement les livres publiés après 2000</button>
+    <script src="script3.js"></script>
+</body>
+</html>

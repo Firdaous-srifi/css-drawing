@@ -1,0 +1,18 @@
+{
+    "destinations": [
+      { "name": "Paris", "basePrice": 500 },
+      { "name": "New York", "basePrice": 800 },
+      { "name": "Tokyo", "basePrice": 1000 }
+    ],
+    "costPerDay": 50,
+    "optionalActivities": [
+      { "name": "City Tour", "cost": 50 },
+      { "name": "Museum Pass", "cost": 30 },
+      { "name": "Adventure Park", "cost": 70 }
+    ],
+    "discounts": [
+      { "name": "Early Bird Discount", "value": 100 },
+      { "name": "Group Discount", "value": 50 },
+      { "name": "Seasonal Offer", "value": 75 }
+    ]
+  }
