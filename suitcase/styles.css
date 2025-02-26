@@ -1,0 +1,217 @@
+:root {
+    --prune: #691710;
+    --gainsborg: #EADEDA;
+    --raisinblack: #1E1E24;
+    --tigerseye: #D58936;
+    --taupegrey: #998888;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background: var(--taupegrey);
+  }
+  
+  * {
+    position: absolute;
+  }
+  
+  *:before, *:after {
+    position: absolute;
+    content: '';
+  }
+  
+  .backpack {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 640px;
+    height: 640px;
+    background-color: var(--taupegrey);
+    top: 4%;
+    overflow: hidden;
+  }
+  
+  .handle {
+    border: 5px solid black;
+    border-radius: 30px 30px 0 0;
+    width: 150px;
+    height: 65px;
+    left: 245px;
+    top: 50px;
+    background-color: var(--tigerseye);
+    box-shadow: inset 0px 5px 0px rgba(255,255,255,0.2);
+  }
+  
+  .handle::before {
+    content: "";
+    border: 5px solid black;
+    border-radius: 20px 20px 0 0;
+    width: 100px;
+    height: 48px;
+    top: 15px;
+    left: 20px;
+    background-color: var(--taupegrey);
+  }
+  
+  
+  .lid {
+    border: 5px solid black;
+    border-radius: 30px;
+    width: 340px;
+    height: 150px;
+    left: 150px;
+    top: 120px;
+    background-color: var(--prune);
+    box-shadow: inset 0px 7px 0px rgba(255,255,255,0.2);
+  }
+  
+  .body {
+    border: 5px solid black;
+    border-radius: 0 0 30px 30px;
+    width: 300px;
+    height: 300px;
+    left: 170px;
+    top: 275px;
+    background-color: var(--raisinblack);
+    box-shadow: inset 0px 5px 0px rgba(0,0,0,0.2);
+  }
+  
+  .side-pocket-left {
+    border: 5px solid black;
+    border-radius: 30px 0 0 30px;
+    width: 55px;
+    height: 150px;
+    left: -65px;
+    top: 75px;
+    background-color: var(--prune);
+    box-shadow: inset 0px 7px 0px rgba(255,255,255,0.2);
+  }
+  
+  .side-pocket-right {
+    border: 5px solid black;
+    border-radius: 0 30px 30px 0;
+    width: 55px;
+    height: 150px;
+    right: -65px;
+    top: 75px;
+    background-color: var(--prune);
+    box-shadow: inset 0px 7px 0px rgba(255,255,255,0.2);
+  }
+  
+  .front-pocket {
+    width: 290px;
+    height: 150px;
+    top: 75px;
+  }
+  
+  .front-lid {
+    border: 5px solid black;
+    border-radius: 20px;
+    width: 60%;
+    height: 75px;
+    left: 20%;
+    background-color: var(--prune);
+    box-shadow: inset 0px 7px 0px rgba(255,255,255,0.2);
+  }
+  
+  .front-body {
+    border: 5px solid black;
+    border-radius: 0 0 30px 30px;
+    width: 50%;
+    height: 65px;
+    left: 25%;
+    top: 80px;
+    box-shadow: 0px 5px 0px rgba(0,0,0,0.2);
+  }
+  
+  .strap {
+    border: 5px solid black;
+    width: 20px;
+    height: 200px;
+    left: 210px;
+    top: 120px;
+    background-color: var(--tigerseye);
+    box-shadow: inset 0px 7px 0px rgba(255,255,255,0.2);
+  }
+  
+  .strap::before {
+    border: 5px solid black;
+    width: 20px;
+    height: 200px;
+    left: 195px;
+    top: -5px;
+    background-color: var(--tigerseye);
+    box-shadow: inset 0px 7px 0px rgba(255,255,255,0.2);
+  }
+  
+  .strap::after {
+    border: 5px solid black;
+    width: 20px;
+    height: 80px;
+    left: 96px;
+    top: 270px;
+    background-color: var(--tigerseye);
+    box-shadow: inset 0px 7px 0px rgba(255,255,255,0.2);
+  }
+  
+  .buckle1 {
+    border: 5px solid black;
+    width: 50px;
+    height: 30px;
+    left: 195px;
+    top: 257px;
+    background-color: var(--taupegrey);
+  }
+  
+  .buckle1::after {
+    border: 5px solid black;
+    width: 25px;
+    height: 10px;
+    left: 7.5px;
+    top: 5px;
+    background-color: var(--tigerseye);
+  }
+  
+  .buckle2 {
+    border: 5px solid black;
+    width: 50px;
+    height: 30px;
+    left: 395px;
+    top: 257px;
+    background-color: var(--taupegrey);
+  }
+  
+  .buckle2::after {
+    border: 5px solid black;
+    width: 25px;
+    height: 10px;
+    left: 7.5px;
+    top: 5px;
+    background-color: var(--tigerseye);
+  }
+  
+  .buckle3 {
+    border: 5px solid black;
+    width: 50px;
+    height: 30px;
+    left: 295px;
+    top: 415px;
+    background-color: var(--taupegrey);
+  }
+  
+  .buckle3::after {
+    border: 5px solid black;
+    width: 25px;
+    height: 10px;
+    left: 7.5px;
+    top: 5px;
+    background-color: var(--tigerseye);
+  }
+  
