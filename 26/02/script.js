@@ -6,3 +6,5 @@ function fetching(data){
     console.log(data);
 
 }
+
+
