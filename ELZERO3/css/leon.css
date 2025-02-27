@@ -151,7 +151,7 @@ body {
   background-size: cover;
   height: calc(100vh - 64px);
   position: relative;
-}
+} 
 .landing .intro-text {
   position: absolute;
   left: 50%;

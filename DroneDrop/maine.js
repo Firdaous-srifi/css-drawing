@@ -1,6 +1,6 @@
 let select = document.getElementById("select");
 let calc = document.getElementById("calc");
-let res = document.getElementById("res");
+let res = document.getElementById("res"); 
 let res2 = document.getElementById("res2");
 let section = document.getElementById("section");
 let icon = document.getElementById("icon");
@@ -16,7 +16,7 @@ fetch("dropdrone.json")
       option.textContent = key;
       option.value = key;
       select.appendChild(option);
-    }
+    } 
     let base = data.tarifs.standard.base;
     let poid = data.tarifs.standard.poids;
     let dimension = data.tarifs.standard.dimension;
